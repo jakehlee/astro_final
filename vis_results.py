@@ -10,7 +10,7 @@ import csv
 
 DEMUD_PATH = '/Users/Jake/Documents/GitHub/DEMUD/demud/results/cnn-k=50-dim=4563-full-init_item=svd-9883-3701/'
 IFU = '9883-3701'
-N = 20
+N = 10
 
 demud_files = os.listdir(DEMUD_PATH)
 recon = []
@@ -96,6 +96,8 @@ for n in range(N):
 	marvin.utils.plot.map.plot(dapmap=ha, value=ones, fig=fig, ax=ax_tr)
 	ax_tr.images[-1].colorbar.remove()
 	ax_tr.imshow(value, zorder=10)
+	ax_tr.set_title('Spaxel (x,y)=('+str(x)+','+str(y)+') Location')
+	ax_tr.invert_yaxis()
 	red_patch = mpatches.Patch(color='red', label='Bad spaxel')
 	black_patch = mpatches.Patch(color='black', label='Valid spaxel')
 	green_patch = mpatches.Patch(color='green', label='Valid region')
