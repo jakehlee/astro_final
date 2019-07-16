@@ -12,30 +12,30 @@ DEMUD_PATH = '/Users/Jake/Documents/GitHub/DEMUD/demud/results/cnn-k=50-dim=4563
 IFU = '9871-12705'
 N = 10
 
-ATTRS = [
-	"emline_gflux_oii_3727",
-	"emline_gflux_oii_3729",
-	"emline_gflux_hthe_3798",
-	"emline_gflux_heta_3836",
-	"emline_gflux_neiii_3869",
-	"emline_gflux_hzet_3890",
-	"emline_gflux_neiii_3968",
-	"emline_gflux_heps_3971",
-	"emline_gflux_hdel_4102",
-	"emline_gflux_hgam_4341",
-	"emline_gflux_heii_4687",
-	"emline_gflux_hb_4862",
-	"emline_gflux_oiii_4960",
-	"emline_gflux_oiii_5008",
-	"emline_gflux_hei_5877",
-	"emline_gflux_oi_6302",
-	"emline_gflux_oi_6365",
-	"emline_gflux_nii_6549",
-	"emline_gflux_ha_6564",
-	"emline_gflux_nii_6585",
-	"emline_gflux_sii_6718",
-	"emline_gflux_sii_6732"
-]
+ATTRS = {
+	"emline_gflux_oii_3727":3727,
+	"emline_gflux_oii_3729":3729,
+	"emline_gflux_hthe_3798":3798,
+	"emline_gflux_heta_3836":3836,
+	"emline_gflux_neiii_3869":3869,
+	"emline_gflux_hzet_3890":3890,
+	"emline_gflux_neiii_3968":3968,
+	"emline_gflux_heps_3971":3971,
+	"emline_gflux_hdel_4102":4102,
+	"emline_gflux_hgam_4341":4341,
+	"emline_gflux_heii_4687":4687,
+	"emline_gflux_hb_4862":4862,
+	"emline_gflux_oiii_4960":4960,
+	"emline_gflux_oiii_5008":5008,
+	"emline_gflux_hei_5877":5877,
+	"emline_gflux_oi_6302":6302,
+	"emline_gflux_oi_6365":6365,
+	"emline_gflux_nii_6549":6549,
+	"emline_gflux_ha_6564":6564,
+	"emline_gflux_nii_6585":6585,
+	"emline_gflux_sii_6718":6718,
+	"emline_gflux_sii_6732":6732	
+}
 
 demud_files = os.listdir(DEMUD_PATH)
 recon = []
